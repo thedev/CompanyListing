@@ -1,0 +1,31 @@
+  <ul class="controls">
+    <li>
+      <label for="nameInput">Create New Private Company</label>
+      <p>This should create a new Private Company with a DOM footprint matching the template provided. It's name should be set using the text input below.</p>
+      <div class="input-append">
+        <input id="nameInput" ng-model="controls.businessName" placeholder="Business Name" size="16" type="text">
+        <button class="btn btn-inverse" id="createCompanyBtn" type="button" ng-click="controls.create();">Create!</button>
+      </div>
+    </li>
+    <li>
+      <label>Bankrupt a Company</label>
+      <p>This chooses a random Company and makes it bankrupt. You must add a class <code>bankrupt</code> to the Company's DOM node. Furthermore, this company may no longer take part in any business activities.</p>
+      <button class="btn btn-inverse" ng-click="controls.update('bankrupt')" id="bankruptBtn" type="button">Bankrupt Company</button>
+    </li>
+    <li>
+      <label>Add a product to a random private Company</label>
+      <p>This should pick a random private company and add a random product to it. An array of products can be found inside the JSON file under in <code>data</code> directory.</p>
+      <button class="btn btn-inverse" ng-click="controls.addProduct()" id="addProductBtn" type="button">Add Product</button>
+    </li>
+    <li>
+      <label>Float a private Company</label>
+      <p>Pick a random Private Company and change it to a Public Floated company. A Public Floated Company can be displayed by adding the <code>public</code> class to it's DOM node</p>
+      <button class="btn btn-inverse" ng-click="controls.update('public')" id="floatRandomBtn" type="button">Float Random Private Company</button>
+    </li>
+    <li>
+      <label>Encourage Mergers between Public Floated Companies</label>
+      <p>Merge only available if there are at leas 2 companies.</p>
+
+      <button class="btn btn-inverse" ng-show="controls.companies.length > 1" ng-click="controls.merge()" id="encourageMergersBtn" type="button">Encourage Mergers</button>
+    </li>
+  </ul>

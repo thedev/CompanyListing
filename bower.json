@@ -1,0 +1,11 @@
+{
+  "name": "rueters",
+  "version": "0.0.0",
+  "authors": [
+    "Alexandru Ionica <developer.lex@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.6"
+  }
+}

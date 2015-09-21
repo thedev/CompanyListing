@@ -1,4 +1,5 @@
-<div class="company">
-	<span class="name"><!-- Company name goes here --></span>
-	<ul class="assets"><!-- Asset list items go here --></ul>
-</div>
+<span class="name"> {{company.name}} </span>
+<ul class="assets">
+  <!-- track by index necessary if we allow duplicates -->
+  <li ng-repeat='a in company.assets track by $index'> {{a.name}}</li>
+</ul>

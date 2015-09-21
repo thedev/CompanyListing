@@ -11,6 +11,12 @@ This README would normally document whatever steps are necessary to get your app
 ### How do I get set up? ###
 
 * Summary of set up
+
+  Used angular and require.js
+
+  Next steps:
+  - r.js for resource optimization
+
 * Configuration
 * Dependencies
 * Database configuration
